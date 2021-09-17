@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="back">
+        <img id="sun" src="./Images/Page 1/Asset 7.png" alt="">
+        <img id="righttopleaf" src="./Images/Page 1/Asset 4.png" alt="">
+        <img id="lefttopleaf" src="./Images/Page 1/Asset 3.png" alt="">
+        <img id="leftBuild" src="./Images/Page 1/Asset 2.png" alt="">
+        <img id="leftbottomleaf" src="./Images/Page 1/Asset 5.png" alt="">
+        <img id="rightbottomleaf" src="./Images/Page 1/Asset 6.png" alt="">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Iusto dolorem quaerat aliquid autem ut repudiandae.</h2>
+        <img class="animate" data-depth=".8" id="Mountain01" src="./Images/Page 1/Asset 16.png" alt="">
+        <img class="animate" data-depth=".8" id="bottomPot" src="./Images/Page 1/Asset 15.png" alt="">
+        <img class="animate" data-depth=".8" id="hut01" src="./Images/Page 1/Asset 14.png" alt="">
+        <img class="animate" data-depth=".8" id="Mountain02" src="./Images/Page 1/Asset 13.png" alt="">
+        <img class="animate" data-depth=".8" id="hut02" src="./Images/Page 1/Asset 12.png" alt="">
+        <img class="animate" data-depth=".8" id="Mountain03" src="./Images/Page 1/Asset 11.png" alt="">
+        <img class="animate" data-depth=".8" id="pyramid01" src="./Images/Page 1/Asset 10.png" alt="">
+        <img class="animate" data-depth=".8" id="pyramid02" src="./Images/Page 1/Asset 9.png" alt="">
+        
+    </div>
+    <div id="back2">
+        <img id="leftLines" data-depth=".8" src="./Images/Page 2/Asset 2.png" alt="">
+        <img id="rightLines" data-depth=".8" src="./Images/Page 2/Asset 4.png" alt="">
+        <img id="leftCloud01" data-depth=".8" src="./Images/Page 2/Asset 5.png" alt="">
+        <img id="leftCloud02" data-depth=".8" src="./Images/Page 2/Asset 6.png" alt="">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Iusto dolorem quaerat aliquid autem ut repudiandae.</h2>
+    </div>
+    <div id="back3">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <img id="homepg3" src="./Images/Page 3/Asset 1.png" alt="">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <img id="rightbottomleafpg3" src="./Images/Page 3/Asset 4.png" alt="">
+    </div> 
+    <div id="back4">
+      <h2 id="headpg4">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dolorum, omnis.</h2>
+        <div class="waveWrapper waveAnimation">
+            <div class="waveWrapperInner bgTop">
+              <div class="wave waveTop"></div>
+            </div>
+            <div class="waveWrapperInner bgMiddle">
+              <div class="wave waveMiddle" ></div>
+            </div>
+            <div class="waveWrapperInner bgBottom">
+              <div class="wave waveBottom" ></div>
+            </div>
+          </div>
+          <img id="peopleontree" src="./Images/Page 4/Asset 2.png" alt="">
+    </div>
+    <div id="back5">
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- <script>
+        if (window.addEventListener) {window.addEventListener('DOMMouseScroll', wheel, false); 
+window.onmousewheel = document.onmousewheel = wheel;}
+
+function wheel(event) {
+    var delta = 0;
+    if (event.wheelDelta) delta = (event.wheelDelta)/120 ;
+    else if (event.detail) delta = -(event.detail)/3;
+
+    handle(delta);
+    if (event.preventDefault) event.preventDefault();
+    event.returnValue = false;
+}
+
+function handle(sentido) {
+    var inicial = document.body.scrollTop;
+    var time = 6000;
+    var distance = 100;
+  animate({
+    delay: 0,
+    duration: time,
+    delta: function(p) {return p;},
+    step: function(delta) {
+window.scrollTo(0, inicial-distance*delta*sentido);   
+    }});}
+
+function animate(opts) {
+  var start = new Date();
+  var id = setInterval(function() {
+    var timePassed = new Date() - start;
+    var progress = (timePassed / opts.duration);
+    if (progress > 1) {progress = 1;}
+    var delta = opts.delta(progress);
+    opts.step(delta);
+    if (progress == 1) {clearInterval(id);}}, opts.delay || 10);
+}
+    </script> -->
+</body>
+</html>

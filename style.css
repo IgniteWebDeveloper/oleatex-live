@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-thumb{
+    z-index: 99999999;
+}
+
+#back{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-color: red; */
+}
+#back2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-color: red; */
+}
+#righttopleaf{
+    width: 30%;
+    position: fixed;
+    right: 0;
+    top: -8%;
+    z-index: 999999;
+}
+#lefttopleaf{
+    width: 30%;
+    position: absolute;
+    left: -3%;
+    z-index: 99999;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#leftBuild{
+    position: fixed;
+    left: -95px;
+    width: 17%;
+    height: 100%;
+    z-index: 9999;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#sun{
+    position: absolute;
+    left: 50%;
+    top: -12%;
+    z-index: -9;
+    width: 8%;
+    transform: translate(-50% , 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#leftbottomleaf{
+    width: 18%;
+    position: absolute;
+    left: -2%;
+    bottom: -5%;
+    z-index: 99999;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#rightbottomleaf{
+    width: 25%;
+    position: absolute;
+    right: -11%;
+    bottom: -5%;
+    z-index: 999999;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#Mountain01{
+    z-index: 999;
+    position: fixed;
+    bottom: 0%;
+    height: 25%;
+    width: 130%;
+    right: -30%;
+}
+#bottomPot{
+    position: fixed;
+    left: 15%;
+    width: 4%;
+    bottom: 6%;
+    z-index: 99999;
+}
+#hut01{
+    position: fixed;
+    width: 18%;
+    z-index: 99999;
+    bottom: 15%;
+    right: -5%;
+}
+#hut01{
+    position: fixed;
+    width: 18%;
+    bottom: 15%;
+    right: -5%;
+    z-index: 999;
+}
+#Mountain02{
+    position: fixed;
+    opacity: 5;
+    z-index: 99;
+    bottom: 4%;
+    height: 20%;
+    width: 100%;
+    left: 0%;
+}
+#hut02{
+    position: fixed;
+    width: 13%;
+    bottom: 9%;
+    right: 10%;
+    z-index: 99;
+}
+#Mountain03{
+    position: fixed;
+    z-index: 9;
+    bottom: 4%;
+    height: 35%;
+    width: 100%;
+    left: 0%;
+}
+#pyramid01{
+    width: 20%;
+    position: fixed;
+    left: 38%;
+    bottom: 16%;
+}
+#pyramid02{
+    width: 15%;
+    position: fixed;
+    left: 22%;
+    bottom: 18%;
+}
+#back h2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#leftLines{
+    height: 17%;
+    position: absolute;
+    left: -100%;
+    top: 0%;
+}
+#rightLines{
+    height: 15%;
+    position: absolute;
+    right: -100%;
+    bottom: 45%;
+}
+#leftCloud01{
+    width: 15%;
+    position: absolute;
+    left: -100%;
+    top: 24%;
+    transform: translate(-40% , -30% );
+}
+#leftCloud02{
+    width: 13%;
+    position: absolute;
+    right: -100%;
+    top: 45%;
+}
+#back2 h2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Page 3 */
+#back3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+#homepg3{
+    width: 60%;
+    position: absolute;
+    top: 25%;
+    left: -100%;
+    z-index: -9;
+}
+#back3 h2:nth-child(1){
+    position: absolute;
+    top: 14%;
+    right: 4%;
+}
+#back3 h2:nth-child(3){
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+#rightbottomleafpg3{
+    position: absolute;
+    right: -4%;
+    bottom: -5%;
+    width: 56%;
+}
+
+
+
+/* Page 4---------------- */
+#back4{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#headpg4{
+    text-align: center;
+    position: absolute;
+    left: -100%;
+    top: 8%;
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    width: 200%;
+    height: 100%;
+    background-image: url("./Images/Page\ 4/Asset 1.png");
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 15s linear infinite;
+}
+.waveBottom {
+    background-size: 100% 40%;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 25s linear infinite;
+}
+#peopleontree{
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Page 5----------------------------- */
+
+#back5{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url("/Images/Page\ 5/Asset 1.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-15%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-30%) translateZ(0) scaleY(1)
+    }
+}
