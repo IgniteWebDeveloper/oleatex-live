@@ -7,12 +7,39 @@ html,body{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    font-family: 'STIX Two Text', serif;
+}
+::-webkit-scrollbar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 100%;
+    transform-origin: center right;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+    z-index: 9999999;
+}
+::-webkit-scrollbar:hover{
+    transform: scaleX(1.45);
 }
 
 ::-webkit-scrollbar-thumb{
-    z-index: 99999999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(186, 186, 186);
+    opacity: 0.5;
+    width: 7px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: -webkit-grab;
+    cursor: grab;
 }
-
+.has-scroll-dragging .c-scrollbar_thumb {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
 #back{
     width: 100%;
     height: 100%;
@@ -165,6 +192,7 @@ html,body{
 }
 #leftCloud02{
     width: 13%;
+    z-index: -9;
     position: absolute;
     right: -100%;
     top: 45%;
@@ -196,17 +224,17 @@ html,body{
 #back3 h2:nth-child(1){
     position: absolute;
     top: 14%;
-    right: 4%;
+    right: -100%;
 }
 #back3 h2:nth-child(3){
     position: absolute;
     bottom: 10%;
-    left: 5%;
+    left: -100%;
 }
 #rightbottomleafpg3{
     position: absolute;
     right: -4%;
-    bottom: -5%;
+    bottom: 0%;
     width: 56%;
 }
 
@@ -289,42 +317,548 @@ html,body{
 #back5{
     width: 100%;
     height: 100%;
+    position: relative;
     background-color: black;
     background-image: url("/Images/Page\ 5/Asset 1.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+#centerpg5{
+    width: 60%;
+    height: 80%;
+    /* background-color: wheat; */
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 80px;
+    transform-origin: center;
+    animation: rotate_on_pg5 25s linear infinite;
+}
+#curveText{
+    height: 90%;
+    position: absolute;
+    top: 7%;
+    left: 28%;
+    transform-origin: center;
+}
+#drumspg5{
+    height: 30%;
+    display: flex;
+}
+#midLogo{
+    width: 5%;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    animation: shaker 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+
+}
+#bottomShirt{
+    width: 30%;
+}
+#roundArrows{
+    height: 52%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#leftOlive{
+    height: 15%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+#rightRolls{
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+#leftOlive01pg5{
+    animation: rotate_Olives_pg5 5s linear infinite;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    width: 25px;
+    transform-origin: center;
+}
+#leftOlive02pg5{
+    animation: rotate_Olives_pg5 5s linear infinite;
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    width: 18px;
+    transform-origin: center;
+}
+#leftOlive03pg5{
+    animation: rotate_Olives_pg5 5s linear infinite;
+    position: absolute;
+    left: 20%;
+    bottom: 15%;
+    width: 35px;
+    transform-origin: center;
+}
+#rightOlive04pg5{
+    animation: rotate_Olives_pg5 5s linear infinite;
+    position: absolute;
+    right: 20%;
+    top: 15%;
+    width: 35px;
+    transform-origin: center;
+}
+#rightOlive05pg5{
+    animation: rotate_Olives_pg5 5s linear infinite;
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    width: 45px;
+    transform-origin: center;
+}
+#rightOlive06pg5{
+    animation: rotate_Olives_pg5 5s linear infinite;
+    position: absolute;
+    right: 20%;
+    bottom: 15%;
+    width: 20px;
+    transform-origin: center;
+}
+
+/* ----------------------- Page 6 --------------------------- */
+#back6{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+    overflow: hidden;
+    background-image: url("/Images/Page\ 5/Asset 1.png");
+}
+#bigLogopg6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    z-index: 99999;
+    background-color: black;
+    box-shadow: 0px 0px 58px rgb(255 255 255 / 41%);
+    border-radius: 50%;
+    transform: translate(-50% , -50%);
+}
+#Olive01pg6{
+    width: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#leaf01pg6{
+    width: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#bag01pg6{
+    position: absolute;
+    animation: rotate_Olives_pg5 40s linear both;
+    width: 0%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#Olive02pg6{
+    position: absolute;
+    width: 0%;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+#pant01pg6{
+    height: 0%;
+    position: absolute;
+    animation: rotate_Olives_pg5 40s linear both;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#Olive03pg6{
+    position: absolute;
+    width: 0%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#Olive04pg6{
+    position: absolute;
+    width: 0%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#leaf02pg6{
+    position: absolute;
+    width: 0%;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+#shirt01pg6{
+    position: absolute;
+    animation: rotate_Olives_pg5 40s linear both;
+    width: 0%;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+#Olive05pg6{
+    position: absolute;
+    width: 0%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#leaf03pg6{
+    position: absolute;
+    width: 0%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#Olive06pg6{
+    position: absolute;
+    width: 0%;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+#back6 h2{
+    color: white;
+    position: absolute;
+    bottom: 30%;
+    right: 17%;
+}
+#shirte02pg6{
+    position: absolute;
+    animation: rotate_Olives_pg5 40s linear both;
+    width: 0%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#bage01pg6{
+    position: absolute;
+    animation: rotate_Olives_pg5 40s linear both;
+    width: 0%;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+#leaf04pg6{
+    position: absolute;
+    width: 0%;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+#pant02pg6{
+    position: absolute;
+    animation: rotate_Olives_pg5 40s linear both;
+    height: 0%;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ----------------------------------- Page 7 ----------------------- */
+
+/* page 7   */
+#back7{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+#toprightbranch01pg7{
+    position: absolute;
+    right: -100%;
+    top: -30%;
+    width: 50%;
+}
+#toprightbranch02pg7{
+    position: absolute;
+    left: 22%;
+    top: -100%;
+    width: 60%;
+}
+#toprightbranch03pg7{
+    position: absolute;
+    top: -5%;
+    left: -100%;
+    width: 30%;
+}
+#Mountain01pg7{
+    z-index: 999;
+    position: absolute;
+    bottom: 0%;
+    height: 20%;
+    width: 130%;
+    z-index: 9999;
+}
+#Mountain02pg7{
+    position: absolute;
+    opacity: 5;
+    z-index: 99;
+    bottom: 4%;
+    height: 20%;
+    width: 100%;
+    left: -16%;
+}
+#Mountain03pg7{
+    position: absolute;
+    z-index: 9;
+    bottom: 4%;
+    height: 28%;
+    width: 100%;
+    right: -15%;
+}
+#toprightbranch04pg7{
+    position: absolute;
+    bottom: -35%;
+    left: -8%;
+    height: 30%;
+    z-index: 99999;
+}
+#bigTree01pg7{
+ position: absolute;
+ height: 40%;
+ left: 11%;
+ bottom: 0%;
+ z-index: 999;
+}
+#midTree02pg7{
+    position: absolute;
+    bottom: 0%;
+    left: 41%;
+    height: 20%;
+    z-index: 9;
+}
+#smallTree03pg7{
+    position: absolute;
+    right: 26%;
+    height: 21%;
+    z-index: 9;
+    bottom: 0%;
+}
+#head01pg7{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    text-align: center;
+}
+#head02pg7{
+    position: absolute;
+    right: 10%;
+    top: 44%;
+    text-align: center;
+}
+#logopg7{
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    width: 15%;
+    z-index: 99999;
+    /* top: 81%;
+    left: 80%;
+    width: 6%; */
 }
 
 
 
+/* ----------------- page 8 ---------------------*/
+#back8{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+#lefthillpg8{
+    position: absolute;
+    bottom: -25%;
+    left: -5%;
+    width: 82%;
+}
+#leftOlivespg8{
+    position: absolute;
+    height: 20%;
+    bottom: 5%;
+    left: 14%;
+    z-index: 999;
+}
+#leftOlivesShadowpg8{
+    position: absolute;
+    height: 7%;
+    bottom: 4.3%;
+    left: 14.5%;
+    opacity: 0;
+}
+#leftTree01pg8{
+    position: absolute;
+    height: 52%;
+    left: 2%;
+    bottom: 12%;
+}
+#back8 h2{
+    position: absolute;
+    left: 7%;
+    top: 14%;
+}
+#Olive01pg8{
+    position: absolute;
+    left: 43%;
+    top: 38%;
+    width: 2%;
+    animation: Olives_float 6s ease-in-out infinite;
+}
+#Olive02pg8{
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    width: 4%;
+    animation: Olives_float 6s ease-in-out infinite;
+}
+#container{
+    width: 50%;
+    height: 65%;
+    /* background-color: red; */
+    position: absolute;
+    right: 4%;
+    top: 8%;
+    padding: 0px 30px;
+    overflow: hidden;
+}
+#backShadow01pg8{
+    position: absolute;
+    bottom: 0%;
+    height: 47%;
+    left: -100%;
+}
+#backShadow02pg8{
+    position: absolute;
+    top: -100%;
+    left: 33%;
+    height: 47%;
+}
+#backShadow03pg8{
+    position: absolute;
+    bottom: 0%;
+    height: 47%;
+    right: -100%;
+}
+#pantpg8{
+    position: absolute;
+    top: 38%;
+    height: 40%;
+    right: 35%;
+    opacity: 0;
+    animation: float 6s ease-in-out infinite;
+}
+#shirtpg8{
+    position: absolute;
+    top: 9%;
+    width: 30%;
+    right: 9%;
+    opacity: 0;
+    animation: float 6s ease-in-out infinite;
+}
+#pursepg8{
+    position: absolute;
+    top: 49%;
+    width: 20%;
+    right: 6%;
+    opacity: 0;
+    animation: float 6s ease-in-out infinite;
+}
+#Logopg8{
+    width: 0%;
+    position: absolute;
+    right: 6%;
+    bottom: 9%;
+    transform-origin: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ------------ page 9 -------------- */
+#back9{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url("/Images/Page\ 5/Asset 1.png");
+}
+#containerpg9{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    /* background-color: red; */
+    overflow: hidden;
+}
+#logopg9{
+    position: absolute;
+    top: -100%;
+    width: 35%;
+    left: 34%;
+    transform-origin: center center;
+}
+#contactus{
+    position: absolute;
+    bottom: 10%;
+    left: -100%;
+    width: 45%;
+    background-color: white;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+#seeProducts{
+    position: absolute;
+    bottom: 10%;
+    right: -100%;
+    width: 45%;
+    background-color: white;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
 
 
 
@@ -357,4 +891,71 @@ html,body{
     100% {
         transform: translateX(-30%) translateZ(0) scaleY(1)
     }
+}
+
+@keyframes rotate_on_pg5 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+        transform-origin: center;
+    }
+}
+@keyframes rotate_elements_pg5 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+        transform-origin: center;
+    }
+}
+@keyframes rotate_Olives_pg5 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+        transform-origin: center;
+    }
+}
+@keyframes shaker {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  @keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes Olives_float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
