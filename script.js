@@ -90,7 +90,6 @@ gsap.to("#hut01", {
     }
 })
 gsap.to("#bottomPot", {
-    bottom: "13%",
     duration: 2,
     scrollTrigger: {
         trigger: "#bottomPot",
@@ -116,7 +115,6 @@ gsap.to("#Mountain02", {
 })
 gsap.to("#hut02", {
     right: "25%",
-    bottom: "18%",
     width: "12%",
     duration: 2,
     scrollTrigger: {
@@ -130,7 +128,7 @@ gsap.to("#hut02", {
 })
 gsap.to("#Mountain03", {
     left: "5%",
-    bottom: "2%",
+    height: "31%",
     duration: 2,
     scrollTrigger: {
         trigger: "#Mountain03",
@@ -217,32 +215,31 @@ gsap.to("#leftCloud02", {
 
 // Page 3-------------------------------------------
 gsap.to("#Mountain01", {
-    right: "100%",
+    bottom: "-100%",
     duration: 3,
     scrollTrigger: {
         trigger: "#headpg2",
-        scrub: 2,
+        scrub: 3,
         start: "top 20%",
         markers: false
     }
 })
 gsap.to("#Mountain02", {
-    left: "100%",
+    bottom: "-100%",
     duration: 3,
     scrollTrigger: {
         trigger: "#headpg2",
-        scrub: 2,
+        scrub: 3,
         start: "top 20%",
         markers: false
     }
 })
 gsap.to("#Mountain03", {
-    left: "100%",
-    display: "none",
+    bottom: "-100%",
     duration: 3,
     scrollTrigger: {
         trigger: "#headpg2",
-        scrub: 2,
+        scrub: 3,
         start: "top 20%",
         markers: false
     }
@@ -250,10 +247,10 @@ gsap.to("#Mountain03", {
 gsap.to("#hut01", {
     bottom: "-100%",
     display: "none",
-    duration: 3,
+    duration: 5,
     scrollTrigger: {
         trigger: "#headpg2",
-        scrub: 2,
+        scrub: 5,
         start: "top 20%",
         markers: false
     }
@@ -261,10 +258,10 @@ gsap.to("#hut01", {
 gsap.to("#hut02", {
     bottom: '-100%',
     display: "none",
-    duration: 3,
+    duration: 5,
     scrollTrigger: {
         trigger: "#headpg2",
-        scrub: 2,
+        scrub: 5,
         start: "top 20%",
         markers: false
     }
@@ -272,10 +269,10 @@ gsap.to("#hut02", {
 gsap.to("#bottomPot", {
     bottom: '-100%',
     display: "none",
-    duration: 3,
+    duration: 5,
     scrollTrigger: {
         trigger: "#headpg2",
-        scrub: 2,
+        scrub: 5,
         start: "top 20%",
         end: "top 50%",
         markers: false
@@ -284,10 +281,10 @@ gsap.to("#bottomPot", {
 gsap.to("#pyramid01", {
     bottom: '-100%',
     display: "none",
-    duration: 3,
+    duration: 5,
     scrollTrigger: {
         trigger: "#headpg2",
-        scrub: 2,
+        scrub: 5,
         start: "top 20%",
         markers: false
     }
@@ -295,22 +292,21 @@ gsap.to("#pyramid01", {
 gsap.to("#pyramid02", {
     bottom: '-100%',
     display: "none",
-    duration: 3,
+    duration: 5,
     scrollTrigger: {
         trigger: "#headpg2",
-        scrub: 2,
+        scrub: 5,
         start: "top 20%",
         markers: false
     }
 })
 gsap.to("#leftBuild", {
-    left: '-100%',
-    opacity: 0,
+    bottom: '-100%',
     display: "none",
-    duration: 3,
+    duration: 5,
     scrollTrigger: {
         trigger: "#headpg2",
-        scrub: 2,
+        scrub: 5,
         start: "top 20%",
         markers: false
     }
@@ -337,7 +333,7 @@ gsap.to("#leftCloud02", {
 })
 gsap.to("#homepg3", {
     position: "fixed",
-    left: "10%",
+    left: "4%",
     duration: .5,
     scrollTrigger: {
         trigger: "#homepg3",
@@ -421,7 +417,7 @@ gsap.to("#leftCloud01", {
     }
 })
 gsap.to("#rightbottomleafpg3", {
-    right: -500,
+    right: "-100%",
     duration: 2,
     scrollTrigger: {
         trigger: "#back3",
@@ -435,9 +431,10 @@ gsap.to("#headpg4", {
     left: "8%",
     duration: 2,
     scrollTrigger: {
-        trigger: "#headpg4",
+        trigger: "#riverwithTree",
         scrub: 2,
-        start: "-10% bottom",
+        start: "0% bottom",
+        end: "15% center",
         toggleActions: "play none none reset",
         markers: false
     }
@@ -490,11 +487,11 @@ gsap.to("#treepeople02", {
     }
 })
 gsap.to("#treepeople01", {
-    bottom: "-100%",
-    duration: 1.5,
+    bottom: "80%",
+    duration: 3,
     scrollTrigger: {
         trigger: "#back5",
-        scrub: 2,
+        scrub: 5,
         start: "top bottom",
         end: "center center",
         toggleActions: "play none none reset",
@@ -502,57 +499,84 @@ gsap.to("#treepeople01", {
     }
 })
 gsap.to("#treepeople02", {
-    bottom: "-100%",
-    duration: 1.5,
+    bottom: "80%",
+    duration: 3,
     scrollTrigger: {
         trigger: "#back5",
-        scrub: 2,
+        scrub: 5,
         start: "top bottom",
         end: "center center",
         toggleActions: "play none none reset",
         markers: false
     }
 })
-// gsap.to("#midLogo", {
-//     width: "20%",
-//     top:"250%",
-//     ease: 'none',
-//     duration: .1,
-//     scrollTrigger: {
-//         trigger: "#back6",
-//         scrub: 2,
-//         start: "top bottom",
-//         toggleActions: "play none none reset",
-//         markers: false
-//     }
-// })
-// gsap.to("#bottomShirt", {
-//     position: "absolute",
-//     bottom: "-152%",
-//     width: "15%",
-//     left: "0%",
-//     transform: "rotate(45deg)",
-//     scrollTrigger: {
-//         trigger: "#back6",
-//         scrub: 2,
-//         start: "top center",
-//         end: "30% top",
-//         toggleActions: "play none none reset",
-//         markers: false
-//     }
-// })
-// gsap.to("#drumspg5", {
-//     top: "-100%",
-//     position: "absolute",
-//     scrollTrigger: {
-//         trigger: "#back6",
-//         scrub: 2,
-//         start: "top center",
-//         toggleActions: "play none none reset",
-//         markers: false
-//     }
-// })
+gsap.to("#peopleontree", {
+    bottom: "80%",
+    duration: 3,
+    scrollTrigger: {
+        trigger: "#back5",
+        scrub: 5,
+        start: "top bottom",
+        end: "center center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
+gsap.to("#riverwithTree", {
+    width: "200%",
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#back5",
+        scrub: 4,
+        start: "-5% bottom",
+        end: "30% bottom",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
 
+const tl06 = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#backtop",
+        scrub: 6,
+        start: "35% bottom",
+        end: "50% bottom",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
+
+tl06.to("#curveText",{
+    height: "90%",
+    delay: 1,
+    duration: 2,
+})
+tl06.to("#midLogo",{
+    opacity: 1,
+    width: "7%",
+    duration: 1.5,
+},'-=2')
+tl06.to("#roundArrows",{
+    height: "40%",
+    duration: 1.5,
+})
+tl06.to("#leftOlive",{
+    height: "14%",
+    duration: 1.5,
+})
+tl06.to("#drumspg5",{
+    height: "21%",
+    duration: 1.5,
+})
+tl06.to("#rightRolls",{
+    height: "16%",
+    duration: 1.5,
+})
+tl06.to("#bottomShirt",{
+    width: "15%",
+    opacity: 1,
+    duration: 1.5,
+})
 
 gsap.to("#midLogo", {
     position: 'fixed',
@@ -560,8 +584,8 @@ gsap.to("#midLogo", {
     left: "50%",
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 0.5,
-        start: "bottom bottom",
+        scrub: 1,
+        start: "108% bottom",
         end: "bottom top",
         toggleActions: "play none none reset",
         markers: false
@@ -573,7 +597,7 @@ gsap.to("#drumspg5", {
     scrollTrigger: {
         trigger: "#backtop",
         scrub: 0.5,
-        start: "bottom bottom",
+        start: "108% bottom",
         end: "bottom top",
         toggleActions: "play none none reset",
         markers: false
@@ -585,32 +609,30 @@ gsap.to("#rightRolls", {
     scrollTrigger: {
         trigger: "#backtop",
         scrub: 0.5,
-        start: "bottom bottom",
+        start: "108% bottom",
         end: "bottom top",
         toggleActions: "play none none reset",
         markers: false
     }
 })
 gsap.to("#curveText", {
-    transform: "translate(0% , 0%)",
-    left: "100%",
+    opacity: 0,
     scrollTrigger: {
         trigger: "#backtop",
         scrub: 0.5,
-        start: "bottom bottom",
-        end: "bottom top",
+        start: "108% bottom",
+        end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
     }
 })
 gsap.to("#roundArrows", {
-    left: "100%",
-    opacity: -1,
+    opacity: 0,
     scrollTrigger: {
         trigger: "#backtop",
         scrub: 0.5,
-        start: "bottom bottom",
-        end: "bottom top",
+        start: "108% bottom",
+        end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
     }
@@ -621,7 +643,7 @@ gsap.to(".leftOlivespg5", {
     scrollTrigger: {
         trigger: "#backtop",
         scrub: 1,
-        start: "bottom bottom",
+        start: "108% bottom",
         end: "bottom top",
         toggleActions: "play none none reset",
         markers: false
@@ -633,7 +655,7 @@ gsap.to(".rightOlivespg5", {
     scrollTrigger: {
         trigger: "#backtop",
         scrub: 1,
-        start: "bottom bottom",
+        start: "108% bottom",
         end: "bottom top",
         toggleActions: "play none none reset",
         markers: false
@@ -645,7 +667,7 @@ gsap.to("#leftOlive", {
     scrollTrigger: {
         trigger: "#backtop",
         scrub: 1,
-        start: "bottom bottom",
+        start: "108% bottom",
         end: "bottom top",
         toggleActions: "play none none reset",
         markers: false
@@ -676,8 +698,8 @@ gsap.to("#Olive01pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -692,8 +714,8 @@ gsap.to("#leaf01pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -708,8 +730,8 @@ gsap.to("#bag01pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -724,8 +746,8 @@ gsap.to("#Olive02pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -740,8 +762,8 @@ gsap.to("#pant01pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -756,8 +778,8 @@ gsap.to("#Olive03pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -772,8 +794,8 @@ gsap.to("#Olive04pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -788,8 +810,8 @@ gsap.to("#leaf02pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -804,8 +826,8 @@ gsap.to("#shirt01pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -820,8 +842,8 @@ gsap.to("#Olive05pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -836,8 +858,8 @@ gsap.to("#leaf03pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -852,8 +874,8 @@ gsap.to("#Olive06pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -869,8 +891,8 @@ gsap.to("#bage01pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -885,8 +907,8 @@ gsap.to("#leaf04pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -901,8 +923,8 @@ gsap.to("#pant02pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
-        start: "110% bottom",
+        scrub: 3,
+        start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
         markers: false
@@ -949,7 +971,7 @@ gsap.to("#toprightbranch03pg7", {
     }
 })
 gsap.to("#toprightbranch04pg7", {
-    bottom: "-12%",
+    height: "30%",
     left: "-5%",
     duration: 1.5,
     scrollTrigger: {
@@ -961,14 +983,42 @@ gsap.to("#toprightbranch04pg7", {
         markers: false
     }
 })
+
+gsap.to("#head01pg7", {
+    left: "10%",
+    duration: 1.5,
+    scrollTrigger: {
+        trigger: "#head01pg7",
+        scrub: 2,
+        start: "top bottom",
+        end: "bottom center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
+
+gsap.to("#head02pg7", {
+    right: "10%",
+    duration: 1.5,
+    scrollTrigger: {
+        trigger: "#head01pg7",
+        scrub: 2,
+        start: "top bottom",
+        end: "bottom center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
+
 gsap.to("#Mountain01pg7", {
     height: "25%",
+    position: "fixed",
     right: "-10%",
     duration: 1.5,
     scrollTrigger: {
         trigger: "#back7",
         scrub: 1,
-        start: "top bottom",
+        start: "30% bottom",
         end: "center center",
         toggleActions: "play none none reset",
         markers: false
@@ -977,12 +1027,13 @@ gsap.to("#Mountain01pg7", {
 
 gsap.to("#Mountain02pg7", {
     height: "25%",
+    position: "fixed",
     left: "-5%",
     duration: 1.5,
     scrollTrigger: {
         trigger: "#back7",
         scrub: 1,
-        start: "top bottom",
+        start: "30% bottom",
         end: "center center",
         toggleActions: "play none none reset",
         markers: false
@@ -991,12 +1042,13 @@ gsap.to("#Mountain02pg7", {
 
 gsap.to("#Mountain03pg7", {
     height: "35%",
+    position: "fixed",
     right: "-10%",
     duration: 1.5,
     scrollTrigger: {
         trigger: "#back7",
         scrub: 1,
-        start: "top bottom",
+        start: "30% bottom",
         end: "center center",
         toggleActions: "play none none reset",
         markers: false
@@ -1005,17 +1057,6 @@ gsap.to("#Mountain03pg7", {
 gsap.to("#logopg7", {
     top: "81%",
     left: "80%",
-    duration: 1.5,
-    scrollTrigger: {
-        trigger: "#back7",
-        scrub: 1,
-        start: "top bottom",
-        end: "center center",
-        toggleActions: "play none none reset",
-        markers: false
-    }
-})
-gsap.to("#logopg7", {
     width: "6%",
     duration: 1.5,
     scrollTrigger: {
@@ -1030,8 +1071,9 @@ gsap.to("#logopg7", {
 
 
 
+
 gsap.to("#bigTree01pg7", {
-    bottom: "12%",
+    position: "fixed",
     height: "40%",
     duration: .5,
     scrollTrigger: {
@@ -1044,7 +1086,8 @@ gsap.to("#bigTree01pg7", {
     }
 })
 gsap.to("#midTree02pg7", {
-    bottom: "17%",
+    position: "fixed",
+    height: "23%",
     duration: 1,
     scrollTrigger: {
         trigger: "#midTree02pg7",
@@ -1056,7 +1099,8 @@ gsap.to("#midTree02pg7", {
     }
 })
 gsap.to("#smallTree03pg7", {
-    bottom: "14%",
+    position: "fixed",
+    height: "21%",
     duration: 1.5,
     scrollTrigger: {
         trigger: "#smallTree03pg7",
@@ -1068,123 +1112,207 @@ gsap.to("#smallTree03pg7", {
     }
 })
 
+
+
+
 gsap.to("#Mountain01pg7", {
-    right: "100%",
-    duration: 1,
+    bottom: "-100%",
+    duration: 5,
     scrollTrigger: {
-        trigger: "#Mountain01pg7",
-        scrub: 2,
-        start: "bottom bottom",
-        end: "bottom 0%",
+        trigger: "#back8",
+        scrub: 5,
+        start: "-30% center",
         toggleActions: "play none none reset",
         markers: false
     }
 })
 gsap.to("#Mountain02pg7", {
-    left: "100%",
-    duration: 1,
+    bottom: "-100%",
+    duration: 5,
     scrollTrigger: {
-        trigger: "#back7",
-        scrub: 2,
-        start: "bottom bottom",
-        end: "bottom 0%",
+        trigger: "#back8",
+        scrub: 5,
+        start: "-30% center",
         toggleActions: "play none none reset",
         markers: false
     }
 })
 gsap.to("#Mountain03pg7", {
-    right: "100%",
-    duration: 1,
+    bottom: "-100%",
+    duration: 5,
     scrollTrigger: {
-        trigger: "#back7",
-        scrub: 2,
-        start: "bottom bottom",
-        end: "bottom 0%",
+        trigger: "#back8",
+        scrub: 5,
+        start: "-30% center",
         toggleActions: "play none none reset",
         markers: false
     }
 })
 gsap.to("#bigTree01pg7", {
-    left: "-100%",
-    duration: 1,
+    bottom: "-100%",
+    duration: 5,
     scrollTrigger: {
-        trigger: "#back7",
-        scrub: 2,
-        start: "bottom bottom",
-        end: "bottom 0%",
+        trigger: "#back8",
+        scrub: 5,
+        start: "-30% center",
+        toggleActions: "play none none reset",
         markers: false
     }
 },'-=1')
 gsap.to("#midTree02pg7", {
-    right: "-100%",
-    duration: 1,
+    bottom: "-100%",
+    duration: 5,
     scrollTrigger: {
-        trigger: "#back7",
-        scrub: 2,
-        start: "bottom bottom",
-        end: "bottom 0%",
+        trigger: "#back8",
+        scrub: 5,
+        start: "-30% center",
+        toggleActions: "play none none reset",
         markers: false
     }
 },'-=1')
 gsap.to("#smallTree03pg7", {
-    right: "-100%",
-    duration: 1,
+    bottom: "-100%",
+    duration: 5,
     scrollTrigger: {
-        trigger: "#back7",
-        scrub: 2,
-        start: "bottom bottom",
-        end: "bottom 0%",
+        trigger: "#back8",
+        scrub: 5,
+        start: "-30% center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+},'-=1')
+gsap.to("#toprightbranch04pg7", {
+    bottom: "-100%",
+    duration: 5,
+    scrollTrigger: {
+        trigger: "#back8",
+        scrub: 5,
+        start: "-30% center",
+        toggleActions: "play none none reset",
         markers: false
     }
 },'-=1')
 
 // -------------------- page 8 --------------------------
 
-const tl03 = gsap.timeline({
+gsap.to("#backShadow01pg8", {
+    left: "5%",
+    duration: 1.5,
     scrollTrigger: {
         trigger: "#back8",
-        scrub: 6,
-        start: "top 80%",
-        end: "center bottom",
+        scrub: 2,
+        start: "0% bottom",
+        end: "40% center",
         toggleActions: "play none none reset",
         markers: false
     }
 })
 
-tl03.to("#backShadow01pg8",{
-    left: "5%",
-    duration: 1.5,
-})
-tl03.to("#backShadow02pg8",{
+gsap.to("#backShadow02pg8", {
     top: "0%",
     duration: 1.5,
-},'-=1.4')
-tl03.to("#backShadow03pg8",{
+    scrollTrigger: {
+        trigger: "#back8",
+        scrub: 2,
+        start: "0% bottom",
+        end: "40% center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
+
+gsap.to("#backShadow03pg8", {
     right: "5%",
     duration: 1.5,
-},'-=1.4')
-tl03.to("#pantpg8",{
-    opacity: 1,
-    duration: 1.5,
+    scrollTrigger: {
+        trigger: "#back8",
+        scrub: 2,
+        start: "0% bottom",
+        end: "40% center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
 })
-tl03.to("#shirtpg8",{
-    opacity: 1,
-    duration: 1.5,
-})
-tl03.to("#pursepg8",{
-    opacity: 1,
-    duration: 1.5,
-})
-tl03.to("#leftOlivesShadowpg8",{
-    opacity: 1 ,
-    duration: 1.5,
-})
-tl03.to("#Logopg8",{
-    width: "6%" ,
-    duration: 1.5,
-},'-=1')
 
+gsap.to("#back8 h2", {
+    left: "7%",
+    duration: 1.5,
+    scrollTrigger: {
+        trigger: "#back8",
+        scrub: 2,
+        start: "0% bottom",
+        end: "30% center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
 
+gsap.to("#shirtpg8", {
+    opacity: 1,
+    width: "30%",
+    duration: 1.5,
+    scrollTrigger: {
+        trigger: "#back8",
+        scrub: 2,
+        start: "0% bottom",
+        end: "40% center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
+
+gsap.to("#pantpg8", {
+    opacity: 1,
+    height: "40%",
+    duration: 1.5,
+    scrollTrigger: {
+        trigger: "#back8",
+        scrub: 2,
+        start: "0% bottom",
+        end: "40% center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
+
+gsap.to("#pursepg8", {
+    opacity: 1,
+    width: "20%",
+    duration: 1.5,
+    scrollTrigger: {
+        trigger: "#back8",
+        scrub: 2,
+        start: "0% bottom",
+        end: "40% center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
+
+gsap.to("#leftOlivesShadowpg8", {
+    opacity: 1,
+    duration: 1.5,
+    scrollTrigger: {
+        trigger: "#back8",
+        scrub: 2,
+        start: "0% bottom",
+        end: "40% center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
+gsap.to("#Logopg8", {
+    width: "6%",
+    duration: 1.5,
+    scrollTrigger: {
+        trigger: "#back8",
+        scrub: 2,
+        start: "50% bottom",
+        end: "60% center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
 
 gsap.to("#logopg9", {
     top: "1%",
