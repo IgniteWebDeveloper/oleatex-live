@@ -593,35 +593,48 @@ gsap.to("#midLogo", {
     position: 'fixed',
     width: '15%',
     left: "50%",
+    duration: 2,
     scrollTrigger: {
         trigger: "#backtop",
         scrub: 1,
-        start: "108% bottom",
+        start: "center bottom",
         end: "bottom top",
         toggleActions: "play none none reset",
         markers: false
     }
 })
 gsap.to("#drumspg5", {
-    position: 'fixed',
     top:"-100%",
+    duration: 3,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 2,
-        start: "108% bottom",
-        end: "bottom top",
+        scrub: 3,
+        start: "55% center",
+        end: "125% center",
         toggleActions: "play none none reset",
         markers: false
     }
 })
 gsap.to("#rightRolls", {
-    position: 'fixed',
     right:"-100%",
+    duration: 3,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 2,
-        start: "108% bottom",
-        end: "bottom top",
+        scrub: 3,
+        start: "55% center",
+        end: "125% center",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
+gsap.to("#leftOlive", {
+    left: "-100%",
+    duration: 3,
+    scrollTrigger: {
+        trigger: "#backtop",
+        scrub: 3,
+        start: "55% center",
+        end: "125% center",
         toggleActions: "play none none reset",
         markers: false
     }
@@ -684,9 +697,10 @@ gsap.to("#Arrow04", {
 gsap.to(".leftOlivespg5", {
     left: "-100%",
     opacity: -1,
+    duration: 3,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
+        scrub: 2,
         start: "108% bottom",
         end: "bottom top",
         toggleActions: "play none none reset",
@@ -705,22 +719,9 @@ gsap.to(".rightOlivespg5", {
         markers: false
     }
 })
-gsap.to("#leftOlive", {
-    position: 'fixed',
-    left: "-100%",
-    scrollTrigger: {
-        trigger: "#backtop",
-        scrub: 1,
-        start: "108% bottom",
-        end: "bottom top",
-        toggleActions: "play none none reset",
-        markers: false
-    }
-})
 gsap.to("#bottomShirt", {
-    position: 'fixed',
     width: "10%",
-    top: "92%",
+    top: "190%",
     left: "22%",
     transform: "translate(0% , 0%)",
     duration: 1.5,
