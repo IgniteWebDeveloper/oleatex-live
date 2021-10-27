@@ -544,6 +544,11 @@ const tl06 = gsap.timeline({
         markers: false
     }
 })
+tl06.to("#midLogo",{
+    opacity: 1,
+    width: "7%",
+    duration: 1.5,
+})
 
 tl06.to("#leftOlive",{
     height: "10%",
@@ -583,22 +588,28 @@ tl06.to("#curveText",{
     height: "90%",
     duration: 2,
 })
-tl06.to("#midLogo",{
-    opacity: 1,
-    width: "7%",
-    duration: 1.5,
-})
+
 
 gsap.to("#midLogo", {
     position: 'fixed',
-    width: '15%',
-    left: "50%",
     duration: 2,
     scrollTrigger: {
-        trigger: "#backtop",
+        trigger: "#backbottom",
+        scrub: true,
+        start: "2% bottom",
+        end: "60% bottom",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
+gsap.to("#midLogo", {
+    width: '15%',
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#backbottom",
         scrub: 1,
-        start: "center bottom",
-        end: "bottom top",
+        start: "40% bottom",
+        end: "60% bottom",
         toggleActions: "play none none reset",
         markers: false
     }
@@ -712,7 +723,7 @@ gsap.to(".rightOlivespg5", {
     opacity: -1,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 1,
+        scrub: 2,
         start: "108% bottom",
         end: "bottom top",
         toggleActions: "play none none reset",
@@ -743,7 +754,7 @@ gsap.to("#Olive01pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -759,7 +770,7 @@ gsap.to("#leaf01pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -775,7 +786,7 @@ gsap.to("#bag01pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -791,7 +802,7 @@ gsap.to("#Olive02pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -807,7 +818,7 @@ gsap.to("#pant01pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -823,7 +834,7 @@ gsap.to("#Olive03pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -839,7 +850,7 @@ gsap.to("#Olive04pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -855,7 +866,7 @@ gsap.to("#leaf02pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -871,7 +882,7 @@ gsap.to("#shirt01pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -887,7 +898,7 @@ gsap.to("#Olive05pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -903,7 +914,7 @@ gsap.to("#leaf03pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -919,7 +930,7 @@ gsap.to("#Olive06pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -936,7 +947,7 @@ gsap.to("#bage01pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -952,7 +963,7 @@ gsap.to("#leaf04pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
@@ -968,7 +979,7 @@ gsap.to("#pant02pg6", {
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 3,
+        scrub: 2,
         start: "140% bottom",
         end: "bottom center",
         toggleActions: "play none none reset",
