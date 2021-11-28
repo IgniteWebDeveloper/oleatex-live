@@ -356,34 +356,36 @@ html,body{
 }
 #curveText{
     height: 0%;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform-origin: center;
     transform: translate( -50%, -50%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #drumspg5{
     height: 0%;
-    position: absolute;
+    position: fixed;
     display: flex;
     left: 50%;
-    top: 32%;
+    top: 30%;
     transform: translate(-50%, -50%);
 }
 #midLogo{
     width: 5%;
     opacity: 0;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     /* background-color: black; */
     transform: translate(-50% , -50%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #bottomShirt{
     width: 13%;
     position: absolute;
     left: 50%;
-    top: 69%;
+    top: 65%;
     opacity: 0;
     transform: translate(-50%, -50%);
 }
@@ -395,15 +397,17 @@ html,body{
     transform: translate(-50%, -50%);
 }
 #Arrow01{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
     height: 0%;
-    position: absolute;
+    position: fixed;
     top: 36%;
     left: 38%;
     transform: translate(-50%, -50%);
 }
 #Arrow02{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
     height: 0%;
-    position: absolute;
+    position: fixed;
     top: 28%;
     right: 38%;
     transform: translate(-50%, -50%);
@@ -411,8 +415,9 @@ html,body{
     transform-origin: center;
 }
 #Arrow03{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
     height: 0%;
-    position: absolute;
+    position: fixed;
     top: 64%;
     right: 37%;
     transform: translate(-50%, -50%);
@@ -420,8 +425,9 @@ html,body{
     transform-origin: center;
 }
 #Arrow04{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
     height: 0%;
-    position: absolute;
+    position: fixed;
     top: 64%;
     left: 37%;
     transform: translate(-50%, -50%);
@@ -430,14 +436,14 @@ html,body{
 }
 #leftOlive{
     height: 0%;
-    position: absolute;
+    position: fixed;
     top: 53%;
     left: 36%;
     transform: translate(-50%, -50%);
 }
 #rightRolls{
     height: 0%;
-    position: absolute;
+    position: fixed;
     top: 50%;
     right: 30%;
     transform: translate(-50%, -50%);

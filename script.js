@@ -541,9 +541,9 @@ gsap.to("#riverwithTree", {
 const tl06 = gsap.timeline({
     scrollTrigger: {
         trigger: "#backtop",
-        scrub: 4,
-        start: "35% bottom",
-        end: "50% 60%",
+        scrub: 2,
+        start: "40% bottom",
+        end: "41% 60%",
         toggleActions: "play none none reset",
         markers: false
     }
@@ -581,6 +581,7 @@ tl06.to("#Arrow03",{
     duration: 1.5,
 },'-=1')
 tl06.to("#bottomShirt",{
+    position: "fixed",
     width: "15%",
     opacity: 1,
     duration: 1.5,
@@ -595,20 +596,19 @@ tl06.to("#curveText",{
 },'-=1')
 
 
-gsap.to("#midLogo", {
-    position: 'fixed',
-    duration: 2,
-    scrollTrigger: {
-        trigger: "#backbottom",
-        scrub: true,
-        start: "2% bottom",
-        end: "60% bottom",
-        toggleActions: "play none none reset",
-        markers: false
-    }
-})
+// gsap.to("#midLogo", {
+//     position: 'fixed',
+//     duration: 2,
+//     scrollTrigger: {
+//         trigger: "#backbottom",
+//         scrub: true,
+//         start: "2% bottom",
+//         end: "60% bottom",
+//         toggleActions: "play none none reset",
+//         markers: false
+//     }
+// })
 gsap.to("#curveText", {
-    position: 'fixed',
     duration: 2,
     left: '49%',
     scrollTrigger: {
@@ -621,7 +621,6 @@ gsap.to("#curveText", {
     }
 })
 gsap.to("#Arrow01", {
-    position: 'fixed',
     left: '37%',
     duration: 2,
     scrollTrigger: {
@@ -633,21 +632,8 @@ gsap.to("#Arrow01", {
         markers: false
     }
 })
-gsap.to("#Arrow02", {
-    position: 'fixed',
-    right: "37%",
-    duration: 2,
-    scrollTrigger: {
-        trigger: "#backbottom",
-        scrub: true,
-        start: "top bottom",
-        end: "60% bottom",
-        toggleActions: "play none none reset",
-        markers: false
-    }
-})
+
 gsap.to("#Arrow03", {
-    position: 'fixed',
     right: "36%",
     duration: 2,
     scrollTrigger: {
@@ -659,18 +645,17 @@ gsap.to("#Arrow03", {
         markers: false
     }
 })
-gsap.to("#Arrow04", {
-    position: 'fixed',
-    duration: 2,
-    scrollTrigger: {
-        trigger: "#backbottom",
-        scrub: true,
-        start: "top bottom",
-        end: "60% bottom",
-        toggleActions: "play none none reset",
-        markers: false
-    }
-})
+// gsap.to("#Arrow04", {
+//     duration: 2,
+//     scrollTrigger: {
+//         trigger: "#backbottom",
+//         scrub: true,
+//         start: "top bottom",
+//         end: "60% bottom",
+//         toggleActions: "play none none reset",
+//         markers: false
+//     }
+// })
 gsap.to("#midLogo", {
     width: '15%',
     duration: 1,
@@ -801,7 +786,7 @@ gsap.to(".rightOlivespg5", {
 })
 gsap.to("#bottomShirt", {
     width: "10%",
-    top: "190%",
+    top: "91%",
     left: "22%",
     transform: "translate(0% , 0%)",
     duration: 1.5,
