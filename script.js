@@ -785,10 +785,10 @@ gsap.to(".rightOlivespg5", {
     }
 })
 gsap.to("#bottomShirt", {
-    width: "10%",
-    top: "91%",
-    left: "22%",
-    transform: "translate(0% , 0%)",
+    width: "26%",
+    top: "75%",
+    left: "8%",
+    transform: "rotate(35deg)",
     duration: 1.5,
     scrollTrigger: {
         trigger: "#backtop",
@@ -799,27 +799,27 @@ gsap.to("#bottomShirt", {
         markers: false
     }
 })
-gsap.to("#Olive01pg6", {
-    position: 'fixed',
-    width: "3%",
-    top: "-2%",
-    left: "3%",
-    transform: "translate(0% , 0%)",
-    duration: 1.5,
-    scrollTrigger: {
-        trigger: "#backtop",
-        scrub: 2,
-        start: "140% bottom",
-        end: "bottom center",
-        toggleActions: "play none none reset",
-        markers: false
-    }
-})
+// gsap.to("#Olive01pg6", {
+//     position: 'fixed',
+//     width: "3%",
+//     top: "-2%",
+//     left: "3%",
+//     transform: "translate(0% , 0%)",
+//     duration: 1.5,
+//     scrollTrigger: {
+//         trigger: "#backtop",
+//         scrub: 2,
+//         start: "140% bottom",
+//         end: "bottom center",
+//         toggleActions: "play none none reset",
+//         markers: false
+//     }
+// })
 gsap.to("#leaf01pg6", {
     position: 'fixed',
-    width: "5%",
-    top: "-2%",
-    left: "25%",
+    width: "10%",
+    top: "9%",
+    left: "21%",
     transform: "translate(0% , 0%)",
     duration: 1.5,
     scrollTrigger: {
@@ -847,27 +847,27 @@ gsap.to("#bag01pg6", {
         markers: false
     }
 })
-gsap.to("#Olive02pg6", {
-    position: 'fixed',
-    width: "5%",
-    top: "3%",
-    right: "3%",
-    transform: "translate(0% , 0%)",
-    duration: 1.5,
-    scrollTrigger: {
-        trigger: "#backtop",
-        scrub: 2,
-        start: "140% bottom",
-        end: "bottom center",
-        toggleActions: "play none none reset",
-        markers: false
-    }
-})
+// gsap.to("#Olive02pg6", {
+//     position: 'fixed',
+//     width: "5%",
+//     top: "3%",
+//     right: "3%",
+//     transform: "translate(0% , 0%)",
+//     duration: 1.5,
+//     scrollTrigger: {
+//         trigger: "#backtop",
+//         scrub: 2,
+//         start: "140% bottom",
+//         end: "bottom center",
+//         toggleActions: "play none none reset",
+//         markers: false
+//     }
+// })
 gsap.to("#pant01pg6", {
     position: 'fixed',
-    height: "17%",
-    top: "28%",
-    left: "2%",
+    height: "7%",
+    top: "22%",
+    left: "4%",
     transform: "translate(0% , 0%)",
     duration: 1.5,
     scrollTrigger: {
@@ -879,41 +879,41 @@ gsap.to("#pant01pg6", {
         markers: false
     }
 })
-gsap.to("#Olive03pg6", {
-    position: 'fixed',
-    width: "5%",
-    top: "19%",
-    left: "15%",
-    transform: "translate(0% , 0%)",
-    duration: 1.5,
-    scrollTrigger: {
-        trigger: "#backtop",
-        scrub: 2,
-        start: "140% bottom",
-        end: "bottom center",
-        toggleActions: "play none none reset",
-        markers: false
-    }
-})
-gsap.to("#Olive04pg6", {
-    position: 'fixed',
-    width: "4%",
-    top: "16%",
-    left: "44%",
-    transform: "translate(0% , 0%)",
-    duration: 1.5,
-    scrollTrigger: {
-        trigger: "#backtop",
-        scrub: 2,
-        start: "140% bottom",
-        end: "bottom center",
-        toggleActions: "play none none reset",
-        markers: false
-    }
-})
+// gsap.to("#Olive03pg6", {
+//     position: 'fixed',
+//     width: "5%",
+//     top: "19%",
+//     left: "15%",
+//     transform: "translate(0% , 0%)",
+//     duration: 1.5,
+//     scrollTrigger: {
+//         trigger: "#backtop",
+//         scrub: 2,
+//         start: "140% bottom",
+//         end: "bottom center",
+//         toggleActions: "play none none reset",
+//         markers: false
+//     }
+// })
+// gsap.to("#Olive04pg6", {
+//     position: 'fixed',
+//     width: "4%",
+//     top: "16%",
+//     left: "44%",
+//     transform: "translate(0% , 0%)",
+//     duration: 1.5,
+//     scrollTrigger: {
+//         trigger: "#backtop",
+//         scrub: 2,
+//         start: "140% bottom",
+//         end: "bottom center",
+//         toggleActions: "play none none reset",
+//         markers: false
+//     }
+// })
 gsap.to("#leaf02pg6", {
     position: 'fixed',
-    width: "9%",
+    width: "6%",
     top: "23%",
     right: "20%",
     transform: "translate(0% , 0%)",
@@ -929,9 +929,9 @@ gsap.to("#leaf02pg6", {
 })
 gsap.to("#shirt01pg6", {
     position: 'fixed',
-    width: "8%",
-    top: "36%",
-    right: "5%",
+    width: "18%",
+    top: "28%",
+    right: "1%",
     transform: "translate(0% , 0%)",
     duration: 1.5,
     scrollTrigger: {
@@ -943,26 +943,26 @@ gsap.to("#shirt01pg6", {
         markers: false
     }
 })
-gsap.to("#Olive05pg6", {
-    position: 'fixed',
-    width: "7%",
-    bottom: "10%",
-    left: "0%",
-    transform: "translate(0% , 0%)",
-    duration: 1.5,
-    scrollTrigger: {
-        trigger: "#backtop",
-        scrub: 2,
-        start: "140% bottom",
-        end: "bottom center",
-        toggleActions: "play none none reset",
-        markers: false
-    }
-})
+// gsap.to("#Olive05pg6", {
+//     position: 'fixed',
+//     width: "7%",
+//     bottom: "10%",
+//     left: "0%",
+//     transform: "translate(0% , 0%)",
+//     duration: 1.5,
+//     scrollTrigger: {
+//         trigger: "#backtop",
+//         scrub: 2,
+//         start: "140% bottom",
+//         end: "bottom center",
+//         toggleActions: "play none none reset",
+//         markers: false
+//     }
+// })
 gsap.to("#leaf03pg6", {
     position: 'fixed',
-    width: "10%",
-    bottom: "30%",
+    width: "9%",
+    bottom: "38%",
     left: "15%",
     transform: "translate(0% , 0%)",
     duration: 1.5,
@@ -975,22 +975,22 @@ gsap.to("#leaf03pg6", {
         markers: false
     }
 })
-gsap.to("#Olive06pg6", {
-    position: 'fixed',
-    width: "4%",
-    right: "27%",
-    bottom: "40%",
-    transform: "translate(0% , 0%)",
-    duration: 1.5,
-    scrollTrigger: {
-        trigger: "#backtop",
-        scrub: 2,
-        start: "140% bottom",
-        end: "bottom center",
-        toggleActions: "play none none reset",
-        markers: false
-    }
-})
+// gsap.to("#Olive06pg6", {
+//     position: 'fixed',
+//     width: "4%",
+//     right: "27%",
+//     bottom: "40%",
+//     transform: "translate(0% , 0%)",
+//     duration: 1.5,
+//     scrollTrigger: {
+//         trigger: "#backtop",
+//         scrub: 2,
+//         start: "140% bottom",
+//         end: "bottom center",
+//         toggleActions: "play none none reset",
+//         markers: false
+//     }
+// })
 
 gsap.to("#bage01pg6", {
     position: 'fixed',
@@ -1011,8 +1011,8 @@ gsap.to("#bage01pg6", {
 gsap.to("#leaf04pg6", {
     position: 'fixed',
     width: "6%",
-    right: "15%",
-    bottom: "20%",
+    right: "8%",
+    bottom: "32%",
     transform: "translate(0% , 0%)",
     duration: 1.5,
     scrollTrigger: {
@@ -1026,9 +1026,9 @@ gsap.to("#leaf04pg6", {
 })
 gsap.to("#pant02pg6", {
     position: 'fixed',
-    height: "15%",
-    right: "5%",
-    bottom: "6%",
+    height: "26%",
+    right: "7%",
+    bottom: "-5%",
     transform: "translate(0% , 0%)",
     duration: 1.5,
     scrollTrigger: {
@@ -1419,7 +1419,18 @@ gsap.to("#Logopg8", {
 })
 
 gsap.to("#logopg9", {
-    top: "1%",
+    left: "12%",
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#back9",
+        scrub: 2,
+        start: "top 0%",
+        end: "center center",
+        markers: false
+    }
+})
+gsap.to("#logoLeftpg9", {
+    right: "11%",
     duration: 1,
     scrollTrigger: {
         trigger: "#back9",
