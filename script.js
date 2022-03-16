@@ -13,6 +13,33 @@ gsap.to("#lefttopleaf", {
         markers: false
     }
 })
+gsap.to("#MainBTN", {
+    left: "85%",
+    top: "90%",
+    duration: 2,
+    scrollTrigger: {
+        trigger: "#MainBTN",
+        scrub: 2,
+        start: "top",
+        end: "bottom",
+        markers: false
+    }
+})
+const tl04 = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#back9",
+        scrub: 2,
+        start: "top bottom",
+        end: "center 60%",
+        toggleActions: "play none none reset",
+        markers: false
+    }
+})
+tl04.to("#MainBTN",{
+    top: "55%",
+    left: "50%",
+    duration: 1.5,
+})
 gsap.to("#sun", {
     bottom: '65%',
     duration: 2,
@@ -865,7 +892,7 @@ gsap.to("#bag01pg6", {
 // })
 gsap.to("#pant01pg6", {
     position: 'fixed',
-    height: "7%",
+    height: "10%",
     top: "22%",
     left: "4%",
     transform: "translate(0% , 0%)",
@@ -911,11 +938,11 @@ gsap.to("#pant01pg6", {
 //         markers: false
 //     }
 // })
-gsap.to("#leaf02pg6", {
+gsap.to("#sofa02pg6", {
     position: 'fixed',
-    width: "6%",
-    top: "23%",
-    right: "20%",
+    width: "8%",
+    top: "17%",
+    right: "27%",
     transform: "translate(0% , 0%)",
     duration: 1.5,
     scrollTrigger: {
@@ -929,9 +956,9 @@ gsap.to("#leaf02pg6", {
 })
 gsap.to("#shirt01pg6", {
     position: 'fixed',
-    width: "18%",
-    top: "28%",
-    right: "1%",
+    right: "5%",
+    top: "22%",
+    width: "7%",
     transform: "translate(0% , 0%)",
     duration: 1.5,
     scrollTrigger: {
@@ -994,7 +1021,7 @@ gsap.to("#leaf03pg6", {
 
 gsap.to("#bage01pg6", {
     position: 'fixed',
-    width: "8%",
+    width: "6%",
     right: "29%",
     bottom: "5%",
     transform: "translate(0% , 0%)",
@@ -1008,11 +1035,11 @@ gsap.to("#bage01pg6", {
         markers: false
     }
 })
-gsap.to("#leaf04pg6", {
+gsap.to("#belt04pg6", {
     position: 'fixed',
-    width: "6%",
+    width: "9%",
     right: "8%",
-    bottom: "32%",
+    bottom: "39%",
     transform: "translate(0% , 0%)",
     duration: 1.5,
     scrollTrigger: {
@@ -1026,9 +1053,9 @@ gsap.to("#leaf04pg6", {
 })
 gsap.to("#pant02pg6", {
     position: 'fixed',
-    height: "26%",
+    height: "19%",
     right: "7%",
-    bottom: "-5%",
+    bottom: "5%",
     transform: "translate(0% , 0%)",
     duration: 1.5,
     scrollTrigger: {
@@ -1441,22 +1468,4 @@ gsap.to("#logoLeftpg9", {
     }
 })
 
-const tl04 = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#back9",
-        scrub: 5,
-        start: "top bottom",
-        end: "center 60%",
-        toggleActions: "play none none reset",
-        markers: false
-    }
-})
 
-tl04.to("#contactus",{
-    left: "3%",
-    duration: 1.5,
-})
-tl04.to("#seeProducts",{
-    right: "3%",
-    duration: 1.5,
-},'-=1.5')
