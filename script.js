@@ -1446,7 +1446,7 @@ gsap.to("#Logopg8", {
 })
 
 gsap.to("#logopg9", {
-    left: "12%",
+    left: "13%",
     duration: 1,
     scrollTrigger: {
         trigger: "#back9",
